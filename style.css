@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: white;
+  --width: 60vw;
+  --margin: 0px auto;
+  font-family: sans-serif;
+}
+body > header,
+main,
+body > footer {
+  width: var(--width);
+  margin: var(--margin);
+  box-sizing: border-box;
+  background-color: #eee;
+  border: 2px solid #aaa;
+}
+
+body > header {
+  padding: 10px 30px;
+}
+
+hgroup {
+  padding: 5px 0px 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 80px;
+}
+
+nav > li {
+  cursor: pointer;
+  list-style: none;
+}
+
+nav > li:hover {
+  text-shadow: 0.7px 0.7px 1.5px #ccc;
+}
