@@ -28,8 +28,8 @@ gardens reduce heat and improve air quality.
 **Section 2 Title:** Real-World Example\
 **Content:** In 2024, the SkyGrow Project launched in New York City.
 
-**Image:** Photo of a rooftop garden in NYC **Caption:** Volunteers planting
-vegetables at SkyGrow Project.
+**Image:** Photo of a rooftop garden in NYC\
+**Caption:** Volunteers planting vegetables at SkyGrow Project.
 
 **Expandable Details:** Project Funding: The initial investment was $250,000.
 
