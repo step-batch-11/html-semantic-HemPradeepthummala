@@ -1,17 +1,15 @@
 * {
   margin: 0px;
   padding: 0px;
-  color: #111;
   font: serif;
 }
 body {
   background-color: white;
   --width: 70vw;
   --margin: 0px auto;
-  /* font-family: sans-serif; */
   padding: 0em 3em;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
 }
 body > header,
 main,
@@ -27,8 +25,13 @@ body > footer {
   padding: 0em 1.3em;
   box-sizing: border-box;
   margin-top: 8px;
-  border-top: 2px solid #222;
-  border-bottom: 2px solid #222;
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+}
+
+body > footer {
+  background-color: #999;
+  color: white;
 }
 
 hgroup {
@@ -48,7 +51,7 @@ hgroup > p {
 
 header nav {
   text-align: center;
-  background-color: #aaa;
+  background-color: #999;
   height: 1.8em;
   display: flex;
   justify-content: center;
@@ -61,7 +64,7 @@ nav > li {
   cursor: pointer;
   list-style: none;
   font-size: 1.2em;
-  color: whitesmoke;
+  color: white;
 }
 
 nav > li:hover {
@@ -70,21 +73,19 @@ nav > li:hover {
 
 main {
   padding: 0em 1.3em;
-  /* background-color: #eee; */
   display: flex;
-  height: 76.7vh;
-  overflow: hidden;
+  height: fit-content;
 }
 
 main article {
   width: 90%;
   height: 100%;
   overflow: scroll;
+  padding: 0.6em;
 }
 
 main header {
   text-align: justify;
-  padding: 0.6em;
 }
 
 h2 {
@@ -93,10 +94,13 @@ h2 {
 
 article section {
   padding: 0.6em 0.6em 0em;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-article p, summary {
-  line-height: 1.3em;
+article p,
+summary {
+  line-height: 1.4em;
   font-size: 1.2em;
 }
 
@@ -122,25 +126,20 @@ figcaption {
   font-style: italic;
 }
 
-details p {
-  display: none;
-}
-
 mark {
   background-color: #d4d4d4;
   padding: 0px 4px;
 }
 
-details:hover p {
+details p {
   display: block;
   padding: 10px;
   background: #f4f4f4;
-  transition: 10s ease-in-out;
 }
 
 article footer {
   margin-top: 20px;
-  background-color: aliceblue;
+  background-color: #f4f4f4;
   padding: 6px;
 }
 
@@ -163,19 +162,53 @@ body > footer {
 aside {
   border-left: 1px solid #222;
   overflow: scroll;
+  padding: 0.5em;
 }
 
 aside section {
   background-color: #f4f4f4;
   margin-top: 10px;
-  padding: 1em;
+  padding: 0.3em;
 }
 
 a {
+  color: #222;
   text-decoration: none;
   cursor: pointer;
 }
 
 h4 {
   font-size: larger;
+}
+
+dialog {
+  position: absolute;
+  top: 48vh;
+  left: 40vw;
+  background-color: #d4d4d4;
+  border: 4px double #a4a4a4;
+  border-radius: 4px;
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+}
+
+dialog p {
+  font-size: 2em;
+  text-align: center;
+  vertical-align: center;
+}
+
+dialog form  {
+  width:fit-content;
+  margin: 30px auto;
+}
+
+dialog button {
+  border: none;
+  font-size: 1.2em;
+  background-color: #fff;
+  padding: 0.4em;
+  border-radius: 4px;
+  cursor: pointer;
 }
