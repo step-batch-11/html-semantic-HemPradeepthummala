@@ -14,17 +14,30 @@ body > footer {
   width: var(--width);
   margin: var(--margin);
   box-sizing: border-box;
-  background-color: #eee;
+  background-color: #fff;
   border: 2px solid #aaa;
 }
 
 body > header {
-  padding: 10px 30px;
+  padding: 1em;
+  box-sizing: border-box;
 }
 
 hgroup {
-  padding: 5px 0px 1em;
+  text-align: center;
 }
+
+hgroup > h1 {
+  font-size: 4em;
+  font-family: serif;
+  font-weight: 900;
+}
+
+hgroup > p {
+  margin: 3px 0px;
+  font-size: 1.3em;
+}
+
 
 nav {
   display: flex;
