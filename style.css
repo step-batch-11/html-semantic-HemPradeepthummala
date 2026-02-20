@@ -7,6 +7,7 @@ body {
   --width: 60vw;
   --margin: 0px auto;
   font-family: sans-serif;
+  padding: 0em 3em;
 }
 body > header,
 main,
@@ -15,12 +16,14 @@ body > footer {
   margin: var(--margin);
   box-sizing: border-box;
   background-color: #fff;
-  border: 2px solid #aaa;
 }
 
 body > header {
-  padding: 1em;
+  padding: 0em 3em;
   box-sizing: border-box;
+  margin-top: 8px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 hgroup {
@@ -38,16 +41,22 @@ hgroup > p {
   font-size: 1.3em;
 }
 
-
-nav {
+header nav {
+  text-align: center;
+  background-color: #aaa;
+  height: 1.8em;
   display: flex;
-  justify-content: space-between;
-  padding: 0px 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin-bottom: 3px;
 }
 
 nav > li {
   cursor: pointer;
   list-style: none;
+  font-size: 1.2em;
+  color: whitesmoke;
 }
 
 nav > li:hover {
